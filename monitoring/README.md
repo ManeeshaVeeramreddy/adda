@@ -1,38 +1,48 @@
-# Portfolio Monitoring – Grafana Cloud
+# Portfolio Monitoring – Grafana Cloud Synthetic Monitoring
 
 ## Overview
 
-Grafana Cloud is used to monitor the portfolio application and its AWS EC2 server.
+Grafana Cloud Synthetic Monitoring is used to monitor the availability and response of my portfolio website.
 
-The purpose of monitoring is to observe server performance, identify resource usage, and understand the health of the deployed application.
+It performs automated HTTP checks on the website and displays monitoring results through graphical dashboards.
 
-## Infrastructure
+## Monitoring Configuration
 
-- **Application:** Portfolio website
-- **Hosting:** AWS EC2
-- **Operating System:** Ubuntu
 - **Monitoring Platform:** Grafana Cloud
-- **Metrics Collection:** Grafana Alloy
+- **Feature:** Synthetic Monitoring
+- **Check Type:** API / HTTP
+- **HTTP Method:** GET
+- **Target URL:** https://maneeshaveeramreddy.github.io/portfolio-simple/
+- **Application:** Portfolio Website
 
-## Monitoring Objectives
+## Monitoring Workflow
 
-- Monitor CPU utilization.
-- Monitor memory usage.
-- Observe server performance.
-- Identify resource usage patterns.
-- View monitoring information through Grafana Cloud dashboards.
+1. Create an API/HTTP check in Grafana Cloud Synthetic Monitoring.
+2. Configure the HTTP method as GET.
+3. Provide the portfolio website URL as the target.
+4. Grafana periodically sends requests to the website.
+5. The monitoring dashboard displays the check results over time.
 
-## Architecture
+## Monitoring Results
 
-AWS EC2 (Ubuntu Server) → Grafana Alloy → Grafana Cloud → Monitoring Dashboards
+The dashboard provides a graphical representation of monitoring results, helping identify:
+
+- Website availability.
+- Successful and failed HTTP checks.
+- Response-time variations.
+- Website accessibility over time.
 
 ## Benefits
 
-- Provides visibility into server performance.
-- Helps identify resource-related issues.
-- Supports continuous monitoring of the deployed infrastructure.
-- Provides a centralized dashboard for monitoring information.
+- Automatically checks website availability.
+- Helps identify website downtime.
+- Tracks response-time changes.
+- Provides visual monitoring through Grafana dashboards.
 
-## Note
+## Architecture
 
-This monitoring setup uses the existing AWS EC2 instance. No additional EC2 instance is required.
+Grafana Cloud Synthetic Monitoring → HTTP GET Request → Portfolio Website → Monitoring Results and Dashboard
+
+## Conclusion
+
+Synthetic Monitoring provides an automated way to verify whether the deployed portfolio website is accessible and responding to HTTP requests.
