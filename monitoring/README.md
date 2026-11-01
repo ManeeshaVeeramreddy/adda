@@ -5,7 +5,7 @@
 Grafana Cloud Synthetic Monitoring is used to monitor the availability and response of my portfolio website.
 ## Dashboard Screenshot
 
-![Grafana Synthetic Monitoring Dashboard](screenshots/grafana.png)
+![Grafana Synthetic Monitoring Dashboard](screenshot/grafana.png)
 
 It performs automated HTTP checks on the website and displays monitoring results through graphical dashboards.
 
