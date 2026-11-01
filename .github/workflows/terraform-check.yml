@@ -1,0 +1,32 @@
+
+name: Terraform Validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  terraform:
+    name: Validate Terraform
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform -chdir=terraform init -backend=false
+
+      - name: Terraform Format Check
+        run: terraform -chdir=terraform fmt -check -recursive
+
+      - name: Terraform Validate
+        run: terraform -chdir=terraform validate
