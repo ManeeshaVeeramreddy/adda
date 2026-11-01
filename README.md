@@ -262,7 +262,3 @@ Through this project, I gained practical experience in:
 **Maneesha Veeramreddy**
 
 ---
-
-<p align="center">
-  <strong>Learning DevOps Through Practical Implementation</strong>
-</p>
