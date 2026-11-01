@@ -261,12 +261,6 @@ Through this project, I gained practical experience in:
 
 **Maneesha Veeramreddy**
 
-Integrated M.Tech – Computer Science and Engineering
-
-GitHub: [ManeeshaVeeramreddy](https://github.com/ManeeshaVeeramreddy)
-
-LinkedIn: [Maneesha Veerreddy](https://www.linkedin.com/in/maneesha-veerreddy-55929b28/)
-
 ---
 
 <p align="center">
